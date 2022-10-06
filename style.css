@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+Mono:wght@300;400;500&family=Noto+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --cor-principal: #B3B6B7;
+    --cor-secundaria: #17202A;
+    --cor-titulo: #B3B6B7;
+}
+
+body {
+    background: var(--cor-secundaria);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.cabeçalho h1 {
+    color: var(--cor-titulo)
+}
+
+.cabeçalho img {
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0 0 5%;
+}
+
+.container-input .input {
+    width: 400px;
+    height: 330px;
+}
+
+#input-text {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--cor-titulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-titulo);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-titulo);
+}
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img {
+    max-width: 300px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+}
+
+.container-bnt button{
+    border:  2px solid var(--cor-titulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: blue;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border:  2px solid var(--cor-titulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: blue;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-bnt button:hover {
+    border: 4px solid var(--cor-secundaria);
+    transition: 0.5s all;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: (--cor-principal);
+    color: rgb(254, 250, 250);
+}
+
+.rodape h3{
+    font-size: 18px;
+}
+
+.icons ion-icons {
+    width: 25px;
+    height: 25px;
+    color: var(--cor-titulo);
+}
+
+.icons ion-icons:hover {
+    color: var(--cor-secundaria);
+}
